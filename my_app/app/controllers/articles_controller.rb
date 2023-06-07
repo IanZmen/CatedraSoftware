@@ -48,7 +48,7 @@ class ArticlesController < ApplicationController
     # DELETE /articles/1
     def destroy
         @article = Article.find(params[:id])
-         @article.destroy
+        @article.destroy
         redirect_to :articles, status: :see_other
     end
     private
